@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4422403, g: 0.49126327, b: 0.5711524, a: 1}
+  m_IndirectSpecularColor: {r: 0.4422398, g: 0.49126285, b: 0.57115203, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -648,6 +648,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 921885080}
     m_Modifications:
+    - target: {fileID: 1644109527174073992, guid: 5faa98afc670419469ba68970f0a79b0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2161470236316983278, guid: 5faa98afc670419469ba68970f0a79b0,
         type: 3}
       propertyPath: m_Name
@@ -718,6 +723,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 248aa423477d7af428f71a46ee4b0382, type: 2}
+    - target: {fileID: 5219179364195811784, guid: 5faa98afc670419469ba68970f0a79b0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5faa98afc670419469ba68970f0a79b0, type: 3}
 --- !u!1 &647941498
@@ -1147,7 +1157,13 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1741019267}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &958193210
+--- !u!4 &958193222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3063788033124045959, guid: 049de70c1d72b8c40bbcb6139722936d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1741019267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958193224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1156,21 +1172,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 958193209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ef9568351a886a4e87dbe1135f8f31d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b33c9a5a642b4f64bd8c58bbed87016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThePlayer: {fileID: 958193209}
-  TargetDistance: 0
-  AllowedRange: 0
-  TheEnemy: {fileID: 2039797488}
-  EnemySpeed: 3
-  AttackTrigger: 0
---- !u!4 &958193222 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3063788033124045959, guid: 049de70c1d72b8c40bbcb6139722936d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1741019267}
-  m_PrefabAsset: {fileID: 0}
+  playerTr: {fileID: 0}
+  distance: 3
+  height: 3
+  damping: 5
 --- !u!1 &1168158679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1295,7 @@ MonoBehaviour:
   m_hitMouseButton: 0
   m_hitButton: 
   m_hitKey: 49
---- !u!114 &1218179431
+--- !u!114 &1218179430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1296,15 +1304,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1218179416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ef9568351a886a4e87dbe1135f8f31d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b33c9a5a642b4f64bd8c58bbed87016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThePlayer: {fileID: 1218179416}
-  TargetDistance: 0
-  AllowedRange: 0
-  TheEnemy: {fileID: 2039797488}
-  EnemySpeed: 4
-  AttackTrigger: 0
+  playerTr: {fileID: 1387112366}
+  distance: 50
+  height: 3
+  damping: 50
 --- !u!4 &1240727193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2161470236317401996, guid: 5faa98afc670419469ba68970f0a79b0,
@@ -1612,6 +1618,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 5b6ccf51bf25e2048b3fe161868db975, type: 2}
+    - target: {fileID: 4940624964733148357, guid: 049de70c1d72b8c40bbcb6139722936d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496012663249858584, guid: 049de70c1d72b8c40bbcb6139722936d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 049de70c1d72b8c40bbcb6139722936d, type: 3}
 --- !u!1 &1751570191
