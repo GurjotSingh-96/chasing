@@ -1161,33 +1161,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 958193209}
   TargetDistance: 0
-  AllowedRange: 100
+  AllowedRange: 0
   TheEnemy: {fileID: 2039797488}
   EnemySpeed: 3
-  AttackTrigger: 100
+  AttackTrigger: 0
 --- !u!4 &958193222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3063788033124045959, guid: 049de70c1d72b8c40bbcb6139722936d,
     type: 3}
   m_PrefabInstance: {fileID: 1741019267}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &958193223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958193209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47add45141d970646ba567bbd1022dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  round: 1
-  zombieSpawnPoints:
-  - {fileID: 699451561}
-  - {fileID: 138495391}
-  zombieEnemy: {fileID: 2039797488}
 --- !u!1 &1168158679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,23 +1287,6 @@ MonoBehaviour:
   m_hitMouseButton: 0
   m_hitButton: 
   m_hitKey: 49
---- !u!114 &1218179430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218179416}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47add45141d970646ba567bbd1022dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  round: 1
-  zombieSpawnPoints:
-  - {fileID: 699451561}
-  - {fileID: 138495391}
-  zombieEnemy: {fileID: 2039797488}
 --- !u!114 &1218179431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,11 +1300,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 1218179416}
-  TargetDistance: 100
-  AllowedRange: 10
+  TargetDistance: 0
+  AllowedRange: 0
   TheEnemy: {fileID: 2039797488}
   EnemySpeed: 4
-  AttackTrigger: 100
+  AttackTrigger: 0
 --- !u!4 &1240727193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2161470236317401996, guid: 5faa98afc670419469ba68970f0a79b0,
